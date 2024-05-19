@@ -205,7 +205,7 @@ net.ipv4.tcp_congestion_control=bbr
 sysctl -p
 ```
 
-查看bbr3状态
+查看bbr3状态，已经无法使用这个命令检查bbr3，因为已经编译进去内核。
 
 ```
 modinfo tcp_bbr
