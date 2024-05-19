@@ -22,6 +22,23 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 
 安装完成后，xray服务无法启动，是因为配置文件没有设置uuid和密钥
 
+```
+installed: /usr/local/bin/xray
+installed: /usr/local/share/xray/geoip.dat
+installed: /usr/local/share/xray/geosite.dat
+installed: /usr/local/etc/xray/config.json
+installed: /var/log/xray/
+installed: /var/log/xray/access.log
+installed: /var/log/xray/error.log
+installed: /etc/systemd/system/xray.service
+installed: /etc/systemd/system/xray@.service
+removed: /tmp/tmp.wja2oGfDJ9
+info: Xray v1.8.11 is installed.
+You may need to execute a command to remove dependent software: apt purge curl unzip
+Created symlink /etc/systemd/system/multi-user.target.wants/xray.service → /etc/systemd/system/xray.service.
+warning: Failed to enable and start the Xray service
+```
+
 ## 创建uuid和密钥
 
 ```
