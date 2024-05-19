@@ -42,10 +42,10 @@ systemctl status xray.service
 | 流控        | xtls-rprx-vision                            |
 | 传输协议    | tcp                                         |
 | 传输层安全  | reality                                     |
-| SNI         | learn.microsoft.com   (服务器设置相同）                      |
+| SNI         | www.amazon.com   (服务器设置相同）                      |
 | Fingerprint | chrome                                      |
-| PublicKey   | wC-8O2vI-7OmVq4TVNBA57V_g4tMDM7jRXkcBYGMYFw（这是公钥） |
-| shortId     | 6ba85179e30d4fc2     (服务器设置相同）                       |
+| PublicKey   | wC-8O2vI-7OmVq4TVNBA57V_g4tMDM7jRXkcBYGMYFw（公钥） |
+| shortId     | 6ba85179e30d4fc2     (服务器设置相同，每个用户可以不同）                       |
 | spiderX     | /          （爬虫初始路径与参数，建议每个客户端不同，可以是/abc或者 /）                                 |
 
 
