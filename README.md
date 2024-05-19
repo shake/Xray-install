@@ -38,7 +38,7 @@ systemctl status xray.service
 | :---------- | :------------------------------------------ |
 | 地址        | IP 或服务端的域名                           |
 | 端口        | 443      (服务器设置相同，可以其他端口）                                   |
-| 用户ID      | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (服务器设置相同）       |
+| 用户ID      | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (uuid，服务器相同）       |
 | 流控        | xtls-rprx-vision                            |
 | 传输协议    | tcp                                         |
 | 传输层安全  | reality                                     |
