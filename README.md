@@ -120,9 +120,11 @@ dd if=/dev/zero of=/swapfile bs=1024 count=1M
 设置
 
 ```
+# Set the correct permissions
 chmod 0600 /swapfile
-mkswap /swapfile
-swapon /swapfile
+
+mkswap /swapfile  # Set up a Linux swap area
+swapon /swapfile  # Turn the swap on
 ```
 
 查看是否正常工作
