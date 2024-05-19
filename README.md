@@ -32,9 +32,10 @@ cat key
 
 ## 启动
 
+```
 systemctl restart xray.service
-
 systemctl status xray.service
+```
 
 服务正常，表示服务器端完成。
 
