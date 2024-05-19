@@ -486,7 +486,7 @@ install_xray() {
   if [[ -z "$JSONS_PATH" ]] && [[ ! -d "$JSON_PATH" ]]; then
     install -d "$JSON_PATH"
     echo '{
-    "inbounds": [ // 服务端入站配置
+    "inbounds": [ 
         {
             "listen": "0.0.0.0",
             "port": 443,
@@ -494,8 +494,8 @@ install_xray() {
             "settings": {
                 "clients": [
                     {
-                        "id": "28d274ea-491f-4fb4-91de-9cf38beb374b", // 必填，改成自己的uuid，或 1-30 字节的字符串
-                        "flow": "xtls-rprx-vision" // 选填，使用tcp就用这个；使用H2协议则为空
+                        "id": "", // need uuid
+                        "flow": "xtls-rprx-vision" 
                     }
                 ],
                 "decryption": "none"
@@ -504,20 +504,20 @@ install_xray() {
                 "network": "tcp",
                 "security": "reality",
                 "realitySettings": {
-                    "show": false, // 选填，若为 true，输出调试信息
-                    "dest": "www.amazon.com:443", // 必填，国外的真正存在的网站，后面必须带有443
-                    "xver": 0, // 选填，格式同 VLESS fallbacks 的 xver
-                    "serverNames": [ // 必填，客户端可用的 serverName 列表，暂不支持 * 通配符，和dest相配
+                    "show": false, 
+                    "dest": "www.amazon.com:443", 
+                    "xver": 0, 
+                    "serverNames": [ 
                         "amazon.com",
                         "www.amazon.com"
                     ],
-                    "privateKey": "OJOXrEfVy1jWvMkK72X7HnfY1-GxFUEvaCv7236F1Cc", // 必填，刚才生成的私钥Private key
-                    "minClientVer": "", // 选填，客户端 Xray 最低版本，格式为 x.y.z
-                    "maxClientVer": "", // 选填，客户端 Xray 最高版本，格式为 x.y.z
-                    "maxTimeDiff": 0, // 选填，允许的最大时间差，单位为毫秒，0为不限制，可以改为10000-60000之间。
-                    "shortIds": [ // 必填，客户端可用的 shortId 列表，可用于区分不同的客户端
-                        "99", // 客户端ID之一
-                        "ffffffffffffffff" // 0 到 f，长度为 2 的倍数，长度上限为 16
+                    "privateKey": "", // need Private key
+                    "minClientVer": "", 
+                    "maxClientVer": "", 
+                    "maxTimeDiff": 0, 
+                    "shortIds": [
+                        "99", 
+                        "ffffffffffffffff" 
                     ]
                 }
             }
