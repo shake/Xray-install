@@ -100,6 +100,15 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core:
 
 ## BBR3
 
+手工方式无法搞定，只能借助脚本
+
+```
+curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chm
+```
+
+选择13，进入二级页面，选择16升级BBR3. 看了脚本，也实在没理解手工操作的区别。
+
+
 默认1G内存，不够，需要把swap分区扩大到1G。
 
 [ubuntu官方调整swap分区文档](https://askubuntu.com/questions/178712/how-to-increase-swap-space?newreg=59195221d1)
