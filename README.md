@@ -119,8 +119,8 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core:
 
 ### v2rayN
 
-![v2rayN-reality](https://github.com/shake/Xray-install/blob/e0aa7384542815421fd795e28cc442596efe5831/image/reality-03.jpg)
-![v2rayN-reality](https://github.com/shake/Xray-install/blob/e0aa7384542815421fd795e28cc442596efe5831/image/reality-04.jpg)
+![v2rayN-reality](https://github.com/shake/Xray-install/blob/77d0aaf3c079cfe75d0a39e5ddd21967e945839e/image/reality-03.jpg)
+![v2rayN-reality](https://github.com/shake/Xray-install/blob/77d0aaf3c079cfe75d0a39e5ddd21967e945839e/image/reality-04.jpg)
 
 
 # Xray-install
