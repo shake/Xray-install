@@ -64,6 +64,11 @@ cat key
 
 ```
 systemctl restart xray.service
+```
+
+查看状态
+
+```
 systemctl status xray.service
 ```
 
