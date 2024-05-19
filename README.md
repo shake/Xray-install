@@ -74,6 +74,28 @@ systemctl status xray.service
 
 服务正常，表示服务器端完成。
 
+```
+# systemctl status xray.service
+● xray.service - Xray Service
+     Loaded: loaded (/etc/systemd/system/xray.service; enabled; vendor preset: enabled)
+    Drop-In: /etc/systemd/system/xray.service.d
+             └─10-donot_touch_single_conf.conf
+     Active: active (running) since Sun 2024-05-19 06:12:48 UTC; 10s ago
+       Docs: https://github.com/xtls
+   Main PID: 3699 (xray)
+      Tasks: 7 (limit: 1030)
+     Memory: 3.6M
+        CPU: 54ms
+     CGroup: /system.slice/xray.service
+             └─3699 /usr/local/bin/xray run -config /usr/local/etc/xray/config.json
+
+May 19 06:12:48 racknerd-3ab4502 systemd[1]: Started Xray Service.
+May 19 06:12:48 racknerd-3ab4502 xray[3699]: Xray 1.8.11 (Xray, Penetrates Everything.) 45ab4cb (go1.22.>
+May 19 06:12:48 racknerd-3ab4502 xray[3699]: A unified platform for anti-censorship.
+May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Info] infra/conf/serial: Reading confi>
+May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core: Xray 1.8.11 started
+```
+
 ## 客户端配置
 
 | 名称        | 值                                          |
