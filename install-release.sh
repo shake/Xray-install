@@ -516,8 +516,9 @@ install_xray() {
                     "maxClientVer": "", 
                     "maxTimeDiff": 0, 
                     "shortIds": [
-                        "99", 
-                        "ffffffffffffffff" 
+                        "98", 
+                        "",
+                        "0123456789abcdef"
                     ]
                 }
             }
