@@ -45,8 +45,8 @@ systemctl status xray.service
 | SNI         | learn.microsoft.com   (服务器设置相同）                      |
 | Fingerprint | chrome                                      |
 | PublicKey   | wC-8O2vI-7OmVq4TVNBA57V_g4tMDM7jRXkcBYGMYFw（这是公钥） |
-| shortId     | 6ba85179e30d4fc2                            |
-| spiderX     | /                                           |
+| shortId     | 6ba85179e30d4fc2     (服务器设置相同）                       |
+| spiderX     | /          （爬虫初始路径与参数，建议每个客户端不同，可以是/abc或者 /）                                 |
 
 
 
