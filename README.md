@@ -116,10 +116,15 @@ swapoff -a
 
 ```
 dd if=/dev/zero of=/swapfile bs=1024 count=1M
+```
+设置
+
+```
 chmod 0600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 ```
+
 查看是否正常工作
 
 ```
