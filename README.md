@@ -102,6 +102,8 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core:
 
 默认1G内存，不够，需要把swap分区扩大到1G。
 
+[ubuntu官方调整swap分区文档](https://askubuntu.com/questions/178712/how-to-increase-swap-space?newreg=59195221d1)
+
 查看当前swap分区
 
 ```
