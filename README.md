@@ -2,7 +2,9 @@
 
 来自官方的脚本，我修改ubuntu启动的bug，同时把一个默认的配置文件，放到 /usr/local/etc/xray/config.json
 
+...
 bash -c "$(curl -L https://github.com/shake/Xray-install/raw/main/install-release.sh)" @ install
+...
 
 你会发现无法启动，是因为配置文件没有设置uuid和密钥
 
