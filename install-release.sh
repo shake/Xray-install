@@ -489,7 +489,7 @@ install_xray() {
     "inbounds": [ 
         {
             "listen": "0.0.0.0",
-            "port": 443,
+            "port": 8443,
             "protocol": "vless",
             "settings": {
                 "clients": [
