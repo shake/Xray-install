@@ -1,4 +1,6 @@
-# 脚本我修改过。根据我的想法来安装
+# 脚本说明
+
+来自官方的脚本，我修改ubuntu启动的bug，同时把一个默认的配置文件，放到 /usr/local/etc/xray/config.json
 
 bash -c "$(curl -L https://github.com/shake/Xray-install/raw/main/install-release.sh)" @ install
 
