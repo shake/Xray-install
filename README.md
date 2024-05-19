@@ -1,3 +1,41 @@
+# 脚本我修改过。根据我的想法来安装
+
+bash -c "$(curl -L https://github.com/shake/Xray-install/raw/main/install-release.sh)" @ install
+
+你会发现无法启动，是因为配置文件没有设置uuid和密钥
+
+## 创建uuid和密钥
+
+cd /usr/local/bin/
+
+./xray uuid > uuid
+
+./xray x25519 > key
+
+## 查看
+
+cat uuid
+
+cat key
+
+# /usr/local/etc/xray/config.json
+
+直接修改这个配置文件，更换上uuid和私钥就可以。
+
+## 启动
+
+systemctl restart xray.service
+
+systemctl status xray.service
+
+服务正常，表示服务器端完成。
+
+# 客户端v2rayN 设置
+
+创建vless节点
+
+
+
 # Xray-install
 
 Bash script for installing Xray in operating systems such as CentOS / Debian / OpenSUSE that support systemd.
