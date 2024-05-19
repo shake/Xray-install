@@ -141,6 +141,27 @@ grep Swap /proc/meminfo
 echo "/swapfile swap swap sw 0 0" | sudo tee -a /etc/fstab
 ```
 
+优化swap性能
+
+[How To Add Swap Space on Ubuntu 22.04
+](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04)
+
+```
+cat /proc/sys/vm/swappiness
+
+sysctl vm.swappiness=10
+
+cat /proc/sys/vm/vfs_cache_pressure
+
+sysctl vm.vfs_cache_pressure=50
+```
+
+修改 /etc/sysctl.conf
+
+```
+vm.swappiness=10
+vm.vfs_cache_pressure=50
+```
 
 添加repo密钥
 
