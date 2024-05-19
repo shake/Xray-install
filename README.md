@@ -2,6 +2,14 @@
 
 来自官方的脚本，我修改ubuntu启动的bug，同时把一个默认的配置文件，放到 /usr/local/etc/xray/config.json
 
+必备工具
+```
+apt-get update
+apt -y install netcat zip
+nc -zv 服务器IP地址 443
+```
+
+
 ```
 bash -c "$(curl -L https://github.com/shake/Xray-install/raw/main/install-release.sh)" @ install
 ```
