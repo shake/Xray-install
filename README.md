@@ -100,6 +100,39 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core:
 
 ## BBR3
 
+默认1G内存，不够，需要增加swap分区才能正常启动新的内容。
+
+查看当前swap分区
+
+```
+swapon -s
+```
+关闭swap分区
+
+```
+swapoff -a
+```
+创建1Gswap 文件
+
+```
+dd if=/dev/zero of=/swapfile bs=1024 count=1M
+chmod 0600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+```
+查看是否正常工作
+
+```
+grep Swap /proc/meminfo
+```
+
+永久生效
+
+```
+echo "/swapfile swap swap sw 0 0" | sudo tee -a /etc/fstab
+```
+
+
 添加repo密钥
 
 ```
