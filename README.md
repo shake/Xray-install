@@ -98,6 +98,52 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Info] infra/co
 May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core: Xray 1.8.11 started
 ```
 
+## BBR3
+
+添加repo密钥
+
+```
+wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -vo /usr/share/keyrings/xanmod-archive-keyring.gpg
+```
+添加repo
+
+```
+echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
+```
+
+安装新内核
+
+```
+sudo apt update && sudo apt install linux-xanmod-x64v3
+```
+
+重启
+
+开启bbr3
+
+```
+cat > /etc/sysctl.conf << EOF
+
+net.core.default_qdisc=fq_pie
+
+net.ipv4.tcp_congestion_control=bbr
+
+EOF
+```
+
+查看结果
+
+```
+sysctl -p
+```
+
+查看bbr3状态
+
+```
+modinfo tcp_bbr
+```
+
+
 ## 客户端配置
 
 | 名称        | 值                                          |
