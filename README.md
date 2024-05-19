@@ -182,16 +182,12 @@ sudo apt update && sudo apt install linux-xanmod-x64v3
 
 重启
 
-开启bbr3
+开启bbr3，/etc/sysctl.conf，添加两行
 
 ```
-cat > /etc/sysctl.conf << EOF
-
 net.core.default_qdisc=fq_pie
-
 net.ipv4.tcp_congestion_control=bbr
 
-EOF
 ```
 
 查看结果
