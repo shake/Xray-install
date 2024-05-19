@@ -209,6 +209,7 @@ sysctl -p
 
 ```
 modinfo tcp_bbr
+cat /proc/sys/net/ipv4/tcp_congestion_control
 ```
 
 
