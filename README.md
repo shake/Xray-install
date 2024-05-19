@@ -49,6 +49,7 @@ systemctl status xray.service
 | spiderX     | /          （爬虫初始路径与参数，建议每个客户端不同，可以是/abc或者 /）                                 |
 
 
+[官方客户端中文说明](https://github.com/XTLS/REALITY?tab=readme-ov-file)
 
 # Xray-install
 
