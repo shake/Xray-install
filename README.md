@@ -50,8 +50,8 @@ cd /usr/local/bin/
 ## 查看
 
 ```
-cat uuid
-cat key
+cat /usr/local/bin/uuid
+cat /usr/local/bin/key
 ```
 
 ## 修改配置文件
