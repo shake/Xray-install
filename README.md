@@ -11,19 +11,22 @@ bash -c "$(curl -L https://github.com/shake/Xray-install/raw/main/install-releas
 
 ## 创建uuid和密钥
 
+```
 cd /usr/local/bin/
-
 ./xray uuid > uuid
-
 ./xray x25519 > key
+```
 
 ## 查看
 
+```
 cat uuid
-
 cat key
+```
 
-# /usr/local/etc/xray/config.json
+## 修改配置文件
+
+/usr/local/etc/xray/config.json
 
 直接修改这个配置文件，更换上uuid和私钥就可以。
 
