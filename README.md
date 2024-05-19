@@ -56,7 +56,9 @@ cat key
 
 ## 修改配置文件
 
+```
 /usr/local/etc/xray/config.json
+```
 
 直接修改这个配置文件，更换上uuid和私钥就可以。就是2个地方修改就可以。
 
