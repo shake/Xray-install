@@ -14,8 +14,13 @@ nc -zv 服务器IP地址 443
 bash -c "$(curl -L https://github.com/shake/Xray-install/raw/main/install-release.sh)" @ install
 ```
 
+测试的时候，我经常是重复安装和卸载
 
-你会发现无法启动，是因为配置文件没有设置uuid和密钥
+```
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove --purge
+```
+
+安装完成后，xray服务无法启动，是因为配置文件没有设置uuid和密钥
 
 ## 创建uuid和密钥
 
@@ -36,7 +41,7 @@ cat key
 
 /usr/local/etc/xray/config.json
 
-直接修改这个配置文件，更换上uuid和私钥就可以。
+直接修改这个配置文件，更换上uuid和私钥就可以。就是2个地方修改就可以。
 
 ## 启动
 
@@ -60,7 +65,7 @@ systemctl status xray.service
 | SNI         | www.amazon.com   (服务器设置相同）                      |
 | Fingerprint | chrome                                      |
 | PublicKey   | wC-8O2vI-7OmVq4TVNBA57V_g4tMDM7jRXkcBYGMYFw（公钥） |
-| shortId     | 6ba85179e30d4fc2     (服务器设置相同，每个用户可以不同）                       |
+| shortId     | 98     (服务器设置相同，，服务器端设置也可以为空）                       |
 | spiderX     | /          （爬虫初始路径与参数，建议每个客户端不同，可以是/abc或者 /）                                 |
 
 
