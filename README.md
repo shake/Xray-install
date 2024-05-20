@@ -42,16 +42,13 @@ warning: Failed to enable and start the Xray service
 ## 创建uuid和密钥
 
 ```
-cd /usr/local/bin/
-./xray uuid > uuid
-./xray x25519 > key
+cd /usr/local/bin/ && ./xray uuid > uuid && ./xray x25519 > key
 ```
 
 ## 查看
 
 ```
-cat /usr/local/bin/uuid
-cat /usr/local/bin/key
+cat /usr/local/bin/uuid && cat /usr/local/bin/key
 ```
 
 ## 修改配置文件
