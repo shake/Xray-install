@@ -245,7 +245,7 @@ cat /proc/sys/net/ipv4/tcp_congestion_control
 
 默认路由设置
 
-![路由设置]（https://github.com/shake/Xray-install/blob/a229eed7eec6e4e37978e1030096e11e2767b662/image/nekobox-02.jpg）
+![路由设置](https://github.com/shake/Xray-install/blob/a229eed7eec6e4e37978e1030096e11e2767b662/image/nekobox-02.jpg）
 
 ![Nekobox-reality](https://github.com/shake/Xray-install/blob/4f4840b599774712d7114a396214ed7eb27fd90e/image/nekobox-01.jpg)
 
