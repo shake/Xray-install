@@ -99,6 +99,7 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core:
 ```
 
 ## BBR3
+<details><summary>参考资料</summary>
 
 手工方式无法搞定，只能借助脚本
 
@@ -211,7 +212,7 @@ sysctl -p
 modinfo tcp_bbr
 cat /proc/sys/net/ipv4/tcp_congestion_control
 ```
-
+</details> 
 
 ## 客户端配置
 
