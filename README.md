@@ -114,7 +114,16 @@ curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && ch
 
 [ubuntu官方调整swap分区文档](https://askubuntu.com/questions/178712/how-to-increase-swap-space?newreg=59195221d1)
 
-查看当前swap分区
+查看当前swap分区，清除文件系统标识符
+
+```
+swap_partitions=$(grep -E '^/dev/' /proc/swaps | awk '{print $1}')
+echo "$partition"
+swapoff "$partition"
+wipefs -a "$partition"
+mkswap -f "$partition"
+```
+确认
 
 ```
 swapon -s
