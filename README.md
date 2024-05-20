@@ -242,7 +242,11 @@ cat /proc/sys/net/ipv4/tcp_congestion_control
 
 ![Nekobox-reality](https://github.com/shake/Xray-install/blob/4f4840b599774712d7114a396214ed7eb27fd90e/image/nekobox-01.jpg)
 
-# Xray-install
+
+
+<details><summary><font color=Blue>参考资料</font></summary>
+
+     # Xray-install
 
 Bash script for installing Xray in operating systems such as CentOS / Debian / OpenSUSE that support systemd.
 
@@ -331,3 +335,5 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/XTLS/Xray-install.svg)](https://starchart.cc/XTLS/Xray-install)
+
+</details> 
