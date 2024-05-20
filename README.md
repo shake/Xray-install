@@ -240,8 +240,7 @@ cat /proc/sys/net/ipv4/tcp_congestion_control
 
 ### Nekobox
 
-
-
+![Nekobox-reality](https://github.com/shake/Xray-install/blob/4f4840b599774712d7114a396214ed7eb27fd90e/image/nekobox-01.jpg)
 
 # Xray-install
 
