@@ -157,7 +157,7 @@ grep Swap /proc/meminfo
 永久生效
 
 ```
-echo "/swapfile swap swap sw 0 0" | sudo tee -a /etc/fstab
+echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
 ```
 
 优化swap性能
