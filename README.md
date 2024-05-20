@@ -96,6 +96,9 @@ May 19 06:12:48 racknerd-3ab4502 xray[3699]: 2024/05/19 06:12:48 [Warning] core:
 ```
 
 ## BBR3
+
+1G内存的虚拟机，就不建议装BBR3.
+
 <details><summary>参考资料</summary>
 
 手工方式无法搞定，只能借助脚本
